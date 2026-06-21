@@ -391,6 +391,27 @@
   .again-btn:active{transform:translateY(0)}
   .again-btn:focus-visible{outline:3px solid var(--ring);outline-offset:3px}
 
+  .coffee-divider{display:flex;align-items:center;gap:10px;margin:18px 0 0}
+  .coffee-divider i{flex:1;height:1px;background:rgba(159,217,42,.14);display:block}
+  .coffee-divider span{
+    font-family:'Silkscreen',monospace;font-size:8px;letter-spacing:.14em;
+    color:var(--cream-dim);opacity:.6;text-transform:uppercase;
+  }
+  .coffee-btn{
+    display:flex;align-items:center;justify-content:center;gap:9px;
+    width:100%;margin-top:14px;text-decoration:none;box-sizing:border-box;
+    font-family:'Prompt',sans-serif;font-weight:500;font-size:13px;
+    color:var(--lime-hi);background:rgba(159,217,42,.06);
+    border:1px solid rgba(159,217,42,.35);border-radius:14px;padding:14px;
+    transition:background .14s,transform .1s;
+  }
+  .coffee-btn .cup{font-size:17px;line-height:1}
+  .coffee-btn:active{transform:translateY(1px)}
+  .coffee-btn:focus-visible{outline:3px solid var(--ring);outline-offset:3px}
+  @media (hover:hover){
+    .coffee-btn:hover{background:rgba(159,217,42,.12);border-color:rgba(159,217,42,.5)}
+  }
+
   footer{
     margin-top:34px;text-align:center;
     font-family:'Silkscreen',monospace;font-size:9px;letter-spacing:.06em;
@@ -564,6 +585,12 @@
       </div>
 
       <button class="again-btn" id="againBtn">▸ PLAY AGAIN</button>
+
+      <div class="coffee-divider"><i></i><span>enjoyed it?</span><i></i></div>
+      <a class="coffee-btn" href="https://buymeacoffee.com/moonoimonsoon" target="_blank" rel="noopener">
+        <span class="cup">☕</span><span>Buy me a coffee</span>
+      </a>
+
       <button class="quit-link" id="menuBtn">✕ Back to menu</button>
     </div>
     <footer>หมูน้อย · little pig · Moonoi Monsoon</footer>
